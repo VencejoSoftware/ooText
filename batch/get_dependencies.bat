@@ -14,4 +14,5 @@ if not exist %delphi3rdParty%\dcpcrypt\ (
 if not exist %delphiooLib%\ooGeneric\ (
   @echo "Clonning ooGeneric..."
   git clone https://github.com/VencejoSoftware/ooGeneric.git %delphiooLib%\ooGeneric\
+  call %delphiooLib%\ooGeneric\batch\get_dependencies.bat
 )
