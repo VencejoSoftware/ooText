@@ -80,6 +80,8 @@ var
   TextLetter, PatternLetter: Char;
 begin
   Result := False;
+  if Length(_Value) <> Length(_Pattern) then
+    Exit;
   for Index := 1 to Length(_Pattern) do
   begin
     TextLetter := _Value[Index];
