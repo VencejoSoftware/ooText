@@ -4,7 +4,7 @@
 Utils to transform, convert, format and manipulate primitive strings in object oriented paradigm as far as possible in Object Pascal languages
 
 ### Documentation
-If not exists folder "doc" then run the batch "build_doc". The main entry is ./doc/index.html
+If not exists folder "code-documentation" then run the batch "build_doc". The main entry is ./doc/index.html
 
 ### Demo
 See tests code for examples of use.
