@@ -27,7 +27,7 @@
           <PathDelim Value="\"/>
           <SearchPaths>
             <IncludeFiles Value="$(ProjOutDir)"/>
-            <OtherUnitFiles Value="$env(delphi3rdParty)\dunit-agiledoxtestrunner;$env(delphi3rdParty)\dcpcrypt;$env(delphi3rdParty)\generics.collections\src;$env(delphi3rdParty)\dcpcrypt\Ciphers;$env(delphi3rdParty)\dcpcrypt\Hashes;..\..\..\ooBatch\code;..\..\..\ooGeneric\code;..\..\code;..\code"/>
+            <OtherUnitFiles Value="$env(delphi3rdParty)\dunit-agiledoxtestrunner;$env(delphi3rdParty)\dcpcrypt;$env(delphi3rdParty)\generics.collections\src;$env(delphi3rdParty)\dcpcrypt\Ciphers;$env(delphi3rdParty)\dcpcrypt\Hashes;$(delphiooLib)\ooBatch\code;$(delphiooLib)\ooGeneric\code;..\..\code;..\code"/>
             <UnitOutputDirectory Value="..\build\debug"/>
           </SearchPaths>
           <Parsing>
@@ -66,7 +66,7 @@
           <PathDelim Value="\"/>
           <SearchPaths>
             <IncludeFiles Value="$(ProjOutDir)"/>
-            <OtherUnitFiles Value="$env(delphi3rdParty)\dunit-agiledoxtestrunner;$env(delphi3rdParty)\dcpcrypt;$env(delphi3rdParty)\generics.collections\src;$env(delphi3rdParty)\dcpcrypt\Ciphers;$env(delphi3rdParty)\dcpcrypt\Hashes;..\..\..\ooBatch\code;..\..\..\ooGeneric\code;..\..\code;..\code"/>
+            <OtherUnitFiles Value="$env(delphi3rdParty)\dunit-agiledoxtestrunner;$env(delphi3rdParty)\dcpcrypt;$env(delphi3rdParty)\generics.collections\src;$env(delphi3rdParty)\dcpcrypt\Ciphers;$env(delphi3rdParty)\dcpcrypt\Hashes;$(delphiooLib)\ooBatch\code;$(delphiooLib)\ooGeneric\code;..\..\code;..\code"/>
             <UnitOutputDirectory Value="..\build\release"/>
           </SearchPaths>
           <Parsing>
@@ -212,7 +212,7 @@
     <PathDelim Value="\"/>
     <SearchPaths>
       <IncludeFiles Value="$(ProjOutDir)"/>
-      <OtherUnitFiles Value="$env(delphi3rdParty)\dunit-agiledoxtestrunner;$env(delphi3rdParty)\dcpcrypt;$env(delphi3rdParty)\generics.collections\src;$env(delphi3rdParty)\dcpcrypt\Ciphers;$env(delphi3rdParty)\dcpcrypt\Hashes;..\..\..\ooBatch\code;..\..\..\ooGeneric\code;..\..\code;..\code"/>
+      <OtherUnitFiles Value="$env(delphi3rdParty)\dunit-agiledoxtestrunner;$env(delphi3rdParty)\dcpcrypt;$env(delphi3rdParty)\generics.collections\src;$env(delphi3rdParty)\dcpcrypt\Ciphers;$env(delphi3rdParty)\dcpcrypt\Hashes;$(delphiooLib)\ooBatch\code;$(delphiooLib)\ooGeneric\code;..\..\code;..\code"/>
       <UnitOutputDirectory Value="..\build\$(TargetCPU)-$(TargetOS)"/>
     </SearchPaths>
     <Parsing>
