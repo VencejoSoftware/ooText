@@ -10,7 +10,7 @@ interface
 uses
   SysUtils,
   ooText.Match.Intf,
-  ooEnumerator;
+  ooIterator;
 
 type
   TTextTokenizeEnumerator = class sealed(TInterfacedObject, IStringEnumerator)

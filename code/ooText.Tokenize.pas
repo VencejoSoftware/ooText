@@ -9,7 +9,7 @@ interface
 
 uses
   ooText.Match.Intf,
-  ooEnumerator,
+  ooIterator,
   ooText.TokenizeEnumerator;
 
 type

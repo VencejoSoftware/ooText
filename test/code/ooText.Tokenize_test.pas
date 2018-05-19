@@ -10,7 +10,7 @@ interface
 uses
   SysUtils,
   ooText.Match.Sensitive, ooText.Match.Insensitive,
-  ooEnumerator,
+  ooIterator,
   ooText.Tokenize,
 {$IFDEF FPC}
   fpcunit, testregistry
@@ -42,8 +42,8 @@ var
   Tokenize: IStringEnumerable;
 begin
   Tokenize := TTextTokenize.New(TEXT, ', ', TTextMatchSensitive.New);
-  Tokenize.Enumerator.MoveNext;
-  CheckEquals('Test 1', Tokenize.Enumerator.Current);
+  Tokenize.Iterator.MoveNext;
+  CheckEquals('Test 1', Tokenize.Iterator.Current);
 end;
 
 procedure TTextTokenizeTest.EmptyEnumerable;
@@ -75,12 +75,12 @@ var
   Tokenize: IStringEnumerable;
 begin
   Tokenize := TTextTokenize.New(TEXT, ', ', TTextMatchSensitive.New);
-  Tokenize.Enumerator.MoveNext;
-  Tokenize.Enumerator.MoveNext;
-  CheckEquals('Test2', Tokenize.Enumerator.Current);
-  Tokenize.Enumerator.Reset;
-  Tokenize.Enumerator.MoveNext;
-  CheckEquals('Test 1', Tokenize.Enumerator.Current);
+  Tokenize.Iterator.MoveNext;
+  Tokenize.Iterator.MoveNext;
+  CheckEquals('Test2', Tokenize.Iterator.Current);
+  Tokenize.Iterator.Reset;
+  Tokenize.Iterator.MoveNext;
+  CheckEquals('Test 1', Tokenize.Iterator.Current);
 end;
 
 procedure TTextTokenizeTest.SeparatorEqualText;
